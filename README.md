@@ -1,5 +1,8 @@
 # Odoo xmlrpc client
 
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) to contribute to this project.
+
 ## Installation
 
 ```sh
