@@ -1,8 +1,9 @@
 {
   "name": "odoo-xmlrpc-client",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A nice greeter",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib/**/*"
   ],
@@ -10,14 +11,23 @@
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
-    "test": "jest --config jestconfig.json"
+    "postversion": "git push && git push --tags",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "test": "jest --config jestconfig.json",
+    "version": "npm run format && git add -A src"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dennybiasiolli/odoo-xmlrpc-client.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "odoo",
+    "xmlrpc",
+    "client"
+  ],
+  "author": "Denny Biasiolli",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dennybiasiolli/odoo-xmlrpc-client/issues"
