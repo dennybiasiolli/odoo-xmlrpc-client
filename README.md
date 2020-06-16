@@ -8,6 +8,10 @@ $ npm install odoo-xmlrpc-client
 
 ## Example
 
+**Disclaimer**: please, refer to
+[Odoo External API documentation](https://www.odoo.com/documentation/master/webservices/odoo.html)
+for detailed usage of `odoo.executeKw` parameters.
+
 #### Connection configuration
 
 ```js
