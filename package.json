@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/dennybiasiolli/odoo-xmlrpc-client/issues"
   },
-  "homepage": "https://github.com/dennybiasiolli/odoo-xmlrpc-client#readme"
+  "homepage": "https://github.com/dennybiasiolli/odoo-xmlrpc-client#readme",
+  "devDependencies": {
+    "typescript": "^3.9.5"
+  }
 }
