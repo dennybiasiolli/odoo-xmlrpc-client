@@ -13,7 +13,6 @@ test('My Odoo', async () => {
     await odoo.executeKw('', '');
     expect(true).toBe(false); // should always throw an exception
   } catch (error) {
-    console.log(error);
     expect(error).toBeDefined();
   }
 
